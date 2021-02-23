@@ -2,6 +2,8 @@ from __future__ import division, print_function
 # coding=utf-8
 import sys
 import os
+import glob
+import re
 import numpy as np
 import cv2
 
@@ -13,7 +15,7 @@ from tensorflow.keras.models import load_model
 from flask import Flask, redirect, url_for, request, render_template
 from werkzeug.utils import secure_filename
 from gevent.pywsgi import WSGIServer
-UPLOAD_FOLDER = 'static'
+UPLOAD_FOLDER = r'C:\Users\mebin\OneDrive\Documents\CNN2\static'
 
 # Define a flask app
 app = Flask(__name__)
