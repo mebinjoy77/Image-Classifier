@@ -13,7 +13,7 @@ from tensorflow.keras.models import load_model
 from flask import Flask, redirect, url_for, request, render_template
 from werkzeug.utils import secure_filename
 from gevent.pywsgi import WSGIServer
-UPLOAD_FOLDER = r'C:\Users\mebin\OneDrive\Documents\CNN2\static'
+UPLOAD_FOLDER = r'directory'
 
 # Define a flask app
 app = Flask(__name__)
